@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="478.0" prefWidth="420.0" styleClass="container" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CoffeeShopController">
+   <children>
+      <VBox spacing="20.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="headline" text="Build your coffee!" textAlignment="CENTER" wrappingWidth="378.0000190734863">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <font>
+                  <Font name="Droid Serif Bold" size="16.0" />
+               </font></Text>
+            <HBox fx:id="optionButtonsContainer" prefHeight="0.0" spacing="20.0">
+               <children>
+                  <Button fx:id="creamButton" mnemonicParsing="false" onAction="#creamButtonAction" text="Cream">
+                     <styleClass>
+                        <String fx:value="creamButton" />
+                        <String fx:value="addonButton" />
+                     </styleClass></Button>
+                  <Button fx:id="sugarButton" mnemonicParsing="false" onAction="#sugarButtonAction" text="Sugar">
+                     <styleClass>
+                        <String fx:value="sugarButton" />
+                        <String fx:value="addonButton" />
+                     </styleClass></Button>
+                  <Button fx:id="extraShotButton" mnemonicParsing="false" onAction="#extraShotButtonAction" text="Extra shot">
+                     <styleClass>
+                        <String fx:value="extraShotButton" />
+                        <String fx:value="addonButton" />
+                     </styleClass></Button>
+                  <Button fx:id="whippedCreamButton" mnemonicParsing="false" onAction="#whippedCreamButtonAction" text="Whipped cream">
+                     <styleClass>
+                        <String fx:value="whippedCreamButton" />
+                        <String fx:value="addonButton" />
+                     </styleClass></Button>
+                  <Button fx:id="iceButton" mnemonicParsing="false" onAction="#iceButtonAction" text="Ice">
+                     <styleClass>
+                        <String fx:value="iceButton" />
+                        <String fx:value="addonButton" />
+                     </styleClass></Button>
+               </children></HBox>
+            <ListView fx:id="receiptList" prefHeight="306.0" prefWidth="378.0" styleClass="receiptList" />
+            <HBox prefHeight="22.0" prefWidth="378.0" spacing="40.0">
+               <children>
+                  <Button fx:id="orderButton" mnemonicParsing="false" onAction="#orderButtonAction" text="Place Order">
+                     <styleClass>
+                        <String fx:value="orderButton" />
+                        <String fx:value="actionButton" />
+                     </styleClass></Button>
+                  <Button fx:id="newOrderButton" mnemonicParsing="false" onAction="#newOrderButtonAction" text="New Order">
+                     <styleClass>
+                        <String fx:value="newOrderButton" />
+                        <String fx:value="actionButton" />
+                     </styleClass></Button>
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>
